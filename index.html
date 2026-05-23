@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelmark - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="blackHolePlanet"></div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><button class="nav-btn active" data-section="home">Home</button></li>
+            <li><button class="nav-btn" data-section="about">About Me Today</button></li>
+            <li><button class="nav-btn" data-section="family">My Family</button></li>
+            <li><button class="nav-btn" data-section="achievements">My Achievements</button></li>
+            <li><button class="nav-btn" data-section="hobbies">My Hobbies</button></li>
+            <li><button class="nav-btn" data-section="music">Music</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- HOME SECTION -->
+        <section id="home" class="active">
+            <div class="home-hero">
+                <h1 class="editable" contenteditable="true">Nelmark</h1>
+                <div class="hero-image-container">
+                    <img id="heroImage" src="profile.jpg" alt="Nelmark" class="hero-image" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo'">
+                    <div class="file-upload"><label for="heroUpload">akong dagway</label><input id="heroUpload" type="file" accept="image/*" data-target="heroImage" class="image-input"></div>
+                </div>
+                <h2 class="editable" contenteditable="true" style="color: white; border: none; margin-top: 2rem;">Nelmark</h2>
+                <p class="editable" contenteditable="true" style="font-size: 1.3rem; margin-bottom: 0.5rem;">20 years old</p>
+                <p class="editable" contenteditable="true" style="font-size: 1.1rem;">New Israel, Makilala, North Cotabato</p>
+                <p class="editable" contenteditable="true" style="font-size: 1.1rem; margin-top: 1rem;">University of Southern Mindanao - Kabacan</p>
+                <p class="editable" contenteditable="true" style="font-size: 1rem; margin-top: 0.5rem; color: #e0e0e0;">BS Computer Engineering</p>
+            </div>
+
+            <div class="card">
+                <h2 class="editable" contenteditable="true">Welcome!</h2>
+                <p class="editable" contenteditable="true">Hello! I'm Nelmark, a 20-year-old student from New Israel, Makilala, North Cotabato, currently pursuing a Bachelor of Science in Computer Engineering at the University of Southern Mindanao in Kabacan. This is my personal portfolio where I share my experiences, achievements, and interests.</p>
+                <p class="editable" contenteditable="true" style="margin-top: 1rem;">Explore the different sections to learn more about my journey, family, accomplishments, and the things I'm passionate about.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT ME TODAY SECTION -->
+        <section id="about">
+            <h1>About Me Today</h1>
+            <div class="card">
+                <h2>My Current Interests</h2>
+                <p>Here's what I'm passionate about right now:</p>
+                <div style="margin: 1.5rem 0;">
+                    <h3>🎌 Watching Anime</h3>
+                    <p>I'm a fan of anime and enjoy exploring different genres and stories.</p>
+
+                    <h3>🎬 Movies</h3>
+                    <p>Movies are another passion of mine. I enjoy watching films from various genres and countries.</p>
+
+                    <h3>✈️ Traveling</h3>
+                    <p>I love exploring new places, experiencing different cultures, and creating memorable travel experiences.</p>
+
+                    <h3>🤝 Being a Youth Volunteer</h3>
+                    <p>I'm committed to serving my community and making a positive impact as a youth volunteer.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Gallery - About Me Today</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img id="aboutImage1" src="about1.jpg" alt="Anime Interest" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo+1'">
+                        <div class="gallery-item-caption editable" contenteditable="true">Anime Enthusiast</div>
+                        <div class="file-upload"><label for="about1Upload">Choose image</label><input id="about1Upload" type="file" accept="image/*" data-target="aboutImage1" class="image-input"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img id="aboutImage2" src="about2.jpg" alt="Movie Lover" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo+2'">
+                        <div class="gallery-item-caption editable" contenteditable="true">Movie Lover</div>
+                        <div class="file-upload"><label for="about2Upload">Choose image</label><input id="about2Upload" type="file" accept="image/*" data-target="aboutImage2" class="image-input"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img id="aboutImage3" src="about3.jpg" alt="Traveling" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo+3'">
+                        <div class="gallery-item-caption editable" contenteditable="true">Travel Adventures</div>
+                        <div class="file-upload"><label for="about3Upload">Choose image</label><input id="about3Upload" type="file" accept="image/*" data-target="aboutImage3" class="image-input"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img id="aboutImage4" src="about4.jpg" alt="Youth Volunteer" onerror="this.src='https://via.placeholder.com/250?text=Your+Photo+4'">
+                        <div class="gallery-item-caption editable" contenteditable="true">Youth Volunteer</div>
+                        <div class="file-upload"><label for="about4Upload">Choose image</label><input id="about4Upload" type="file" accept="image/*" data-target="aboutImage4" class="image-input"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY FAMILY SECTION -->
+        <section id="family">
+            <h1 class="editable" contenteditable="true">My Family</h1>
+            <div class="card">
+                <h2 class="editable" contenteditable="true">Family Picture</h2>
+                <div style="text-align: center;">
+                    <img id="familyImage" src="family.jpg" alt="My Family" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); margin: 1rem 0;" onerror="this.src='https://via.placeholder.com/400x300?text=Your+Family+Photo'">
+                    <div class="file-upload"><label for="familyUpload">Choose family image</label><input id="familyUpload" type="file" accept="image/*" data-target="familyImage" class="image-input"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="editable" contenteditable="true">About My Family</h2>
+                <!-- EDIT: Customize your family information -->
+                <p class="editable" contenteditable="true">My family is an important part of my life. We come from New Israel, Makilala, North Cotabato, and family values are central to who I am.</p>
+                
+                <div class="info-box">
+                    <strong>Feel free to edit this section:</strong> Add information about your family members, share your family story, describe your family traditions, and what family means to you. Replace the family photo with your own picture.
+                </div>
+
+                <p>Family has shaped my values and continues to support me in my academic journey and personal growth.</p>
+            </div>
+        </section>
+
+        <!-- MY ACHIEVEMENTS SECTION -->
+        <section id="achievements">
+            <h1 class="editable" contenteditable="true">My Achievements</h1>
+            <div class="card">
+                <h2 class="editable" contenteditable="true">Academic & Leadership Achievements</h2>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-text">
+                        <h3>SSLG PIO</h3>
+                        <p>Supreme Secondary Learners Government - Public Information Officer (SY 2023-2024)</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">📋</div>
+                    <div class="achievement-text">
+                        <h3>SSLG Vice President</h3>
+                        <p>Supreme Secondary Learners Government - Vice President (SY 2024-2025)</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">🎓</div>
+                    <div class="achievement-text">
+                        <h3>SHS Graduate with Honor</h3>
+                        <p>Senior High School - Graduated with Honors</p>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon">⭐</div>
+                    <div class="achievement-text">
+                        <h3>CEIT - LSG Board Member</h3>
+                        <p>College of Engineering and Information Technology - Legislative Student Government Board Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>More About My Journey</h2>
+                <div class="info-box">
+                    <strong>Edit this section:</strong> Add more achievements, awards, certifications, or accomplishments that you're proud of. Include dates, details about each achievement, and what you learned from them.
+                </div>
+            </div>
+        </section>
+
+        <!-- MY HOBBIES SECTION -->
+        <section id="hobbies">
+            <h1 class="editable" contenteditable="true">My Hobbies</h1>
+            <div class="card">
+                <h2 class="editable" contenteditable="true">Things I Love to Do</h2>
+                <div class="gallery">
+                    <div class="hobby-card">
+                        <img id="hobbyImage1" src="hobby1.jpg" alt="Motor Rides" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Motor+Rides'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">🏍️ Motor Rides</h3>
+                            <p class="editable" contenteditable="true">Enjoying the freedom and thrill of riding, exploring new roads and destinations.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby1Upload">Choose image</label><input id="hobby1Upload" type="file" accept="image/*" data-target="hobbyImage1" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage2" src="hobby2.jpg" alt="Traveling" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Traveling'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">✈️ Traveling</h3>
+                            <p class="editable" contenteditable="true">Exploring new places, meeting people, and experiencing different cultures around the world.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby2Upload">Choose image</label><input id="hobby2Upload" type="file" accept="image/*" data-target="hobbyImage2" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage3" src="hobby3.jpg" alt="Hiking" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Hiking'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">⛰️ Hiking</h3>
+                            <p class="editable" contenteditable="true">Trekking through mountains and nature trails, connecting with the outdoors and staying active.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby3Upload">Choose image</label><input id="hobby3Upload" type="file" accept="image/*" data-target="hobbyImage3" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage4" src="hobby4.jpg" alt="Sunset Viewing" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Sunset+Viewing'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">🌅 Sunset Viewing</h3>
+                            <p class="editable" contenteditable="true">Appreciating the beauty of nature by watching sunsets, a moment of peace and reflection.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby4Upload">Choose image</label><input id="hobby4Upload" type="file" accept="image/*" data-target="hobbyImage4" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage5" src="hobby5.jpg" alt="Jogging" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Jogging'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">🏃 Jogging</h3>
+                            <p class="editable" contenteditable="true">Running regularly to stay fit, maintain health, and enjoy the fresh air while exercising.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby5Upload">Choose image</label><input id="hobby5Upload" type="file" accept="image/*" data-target="hobbyImage5" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage6" src="hobby6.jpg" alt="Watching Movies" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Watching+Movies'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">🎬 Watching Movies</h3>
+                            <p class="editable" contenteditable="true">Enjoying films from various genres, a great way to relax and be entertained.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby6Upload">Choose image</label><input id="hobby6Upload" type="file" accept="image/*" data-target="hobbyImage6" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage7" src="hobby7.jpg" alt="Drawing" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Drawing'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">🎨 Drawing</h3>
+                            <p class="editable" contenteditable="true">Expressing creativity through art, creating drawings and illustrations that showcase my artistic side.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby7Upload">Choose image</label><input id="hobby7Upload" type="file" accept="image/*" data-target="hobbyImage7" class="image-input"></div>
+                    </div>
+                    <div class="hobby-card">
+                        <img id="hobbyImage8" src="hobby8.jpg" alt="More Hobbies" class="hobby-image" onerror="this.src='https://via.placeholder.com/250x200?text=Add+Your+Hobby'">
+                        <div class="hobby-info">
+                            <h3 class="editable" contenteditable="true">✨ And Many More</h3>
+                            <p class="editable" contenteditable="true">These are just some of my interests. I continue to explore new hobbies and passions.</p>
+                        </div>
+                        <div class="file-upload"><label for="hobby8Upload">Choose image</label><input id="hobby8Upload" type="file" accept="image/*" data-target="hobbyImage8" class="image-input"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MUSIC SECTION -->
+        <section id="music">
+            <h1 class="editable" contenteditable="true">My Music Library</h1>
+            <div class="card">
+                <h2 class="editable" contenteditable="true">Background Music Player</h2>
+                <audio id="backgroundMusic" controls preload="metadata" loop>
+                    Your browser does not support audio.
+                </audio>
+
+                <div class="music-library">
+                    <!-- Only uploaded tracks will appear here -->
+                </div>
+
+                <div class="file-upload">
+                    <label for="musicUpload">Add audio file</label>
+                    <input id="musicUpload" type="file" accept="audio/*" class="audio-upload">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nelmark Portfolio. All rights reserved.</p>
+        <p>Built with HTML, CSS, and JavaScript | Customizable and Editable</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
